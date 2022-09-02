@@ -1,0 +1,273 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+i{
+	font-style: normal;
+}
+.w{
+   width: 1200px;
+   margin: 0 auto;
+  
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.style_red{
+	color: red;
+}
+li {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+}
+.clearfix::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+
+/* 最顶部 */
+.shortcut {
+	height: 31px;
+	line-height: 31px;
+	background-color:#f1f1f1;
+}
+.shortcut ul li {
+	float: left;
+}
+.fr ul li a{
+	height: 31px;
+}
+.fr ul li:nth-child(2n){
+	width: 1px;
+	height: 12px;
+	background-color: #666;
+	margin: 9px 15px 0;
+}
+.fr ul li:nth-child(3)::after{
+	content:'\e91e';
+}
+
+/* 头部 */
+.header{
+	height: 105px;
+	position: relative;
+}
+.logo {   
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	width: 171px;
+	height: 61px;
+}
+.logo a{
+	display: block;
+	width: 171px;
+	height: 61px;
+	background: url("../images/logo.png");
+	font-size: 0;
+}
+/* 搜索模块  */
+.search{
+	position: absolute;
+	left: 346px;
+	top: 25px;
+	width: 538px;
+	height: 36px;
+	border: 2px solid red;
+	display: flex;
+}
+.search input{
+	width: 455px;
+	height: 32px;
+	border: 0;
+	outline: none;
+	padding-left: 10px;
+}
+.search button{
+	border: 0;
+	height: 32px;
+	flex-grow: 1;
+	background-color:red;
+	color: white;
+}
+/* hotwords模块 */
+.hotwords ul{
+	position: absolute;
+	top: 65px;
+	left: 350px;
+}
+.hotwords a{
+	padding: 0 10px;
+    color: #666;
+}
+.hotwords a:nth-child(1){
+	color: red;
+}
+
+/* 购物车模块 */
+.shopcar{
+	position: absolute;
+	right: 60px;
+	top: 25px;
+	width: 140px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid #dfdfdf;
+	background-color: #f7f7f7;
+}
+.count{
+	position: absolute;
+	top: -7px;
+	left: 105px;
+	height: 14px;
+	line-height: 14px;
+	color: white;
+	background-color:#e60012;
+	padding: 0 5px;
+	border-radius: 7px 7px 7px 0;
+}
+
+/* nav模块制作*/
+.nav{
+	height: 47px;
+	border-bottom: 2px solid #b1191a;
+}
+.dropdown{
+	float: left;
+	width: 210px;
+	height: 45px;
+	background-color: #b1191a;
+}
+.dropdown .dt{
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+}
+.dropdown .dd{
+	margin-top: 2px;
+	width: 210px;
+	height: 465px;
+	background-color: #c81623;
+}
+.dropdown .dd ul li{
+	height: 28px;
+	width: 210px;
+	line-height: 28px;
+	margin-left: 2px;
+	padding-left: 10px;
+	padding-right: 3px;
+}
+.dropdown .dd ul li span{
+	color: white;
+}
+.dropdown .dd ul li a{
+	color: white;
+	font-size: 14px;
+}
+.dropdown .dd ul li:hover{
+	background-color: white;
+}
+.dropdown .dd ul li:hover a{
+	color: #c81623;
+}
+.dropdown .dd ul li:hover span{
+	color: #c81623;
+}
+.dropdown .dd ul li a:hover{
+	text-decoration: underline black;
+}
+.dropdown .dd ul{
+	position: relative;
+}
+.dropdown .dd ul li::after{
+	position: absolute;
+	right: 10px;
+	content: '>';
+}
+.navitems ul li{
+	float: left;
+}
+.navitems ul li a{	
+	display: block;
+	width: 120px;
+	height: 47px;
+	line-height: 47px;
+	text-align: center;
+	font-size: 16px;
+	padding: 0 25px;
+}
+.navitems ul li a:hover{
+	text-decoration: underline;		
+}
+.footer{
+	padding-top: 30px;
+	height: 415px;
+	background-color: #f5f5f5;
+}
+.mod_service ul li{
+	float: left;
+	padding-left: 35px;
+	width: 300px;
+	height: 50px;
+}
+.mod_service ul li h5{
+	float: left;
+	width: 50px;
+	height: 50px;	
+	background:url("../images/icons.png") -252px -2px;
+}
+.mod_service{
+	height: 80px;
+	border-bottom: 1px solid  #ccc;;
+}
+.service_txt h4{
+	font-size: 14px;
+}
+.service_txt p{
+	font-size: 12px;
+}
+.mod_help{
+	height: 185px;
+	border-bottom: 1px solid #ccc;
+	padding-top:20px;
+	padding-left: 50px;
+}
+.mod_help dl{
+	float: left;
+	width: 200px;
+}
+.mod_help dl dt{
+	font-size: 16px;
+}
+.mod_help dl:last-child{
+	width: 90px;
+	text-align: center;
+}
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+.links {
+    margin-bottom: 15px;
+}
+.links a {
+    margin: 0 3px;
+}
+.copyright {
+    line-height: 20px;
+}
