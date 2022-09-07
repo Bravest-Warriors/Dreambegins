@@ -15,30 +15,52 @@
 	font-size: 15px;
 	color: red;
 }
-.container{
+.container {
 	margin-top: 20px;
 	margin-bottom: 100px;
 }
-.sidebar{
+
+.sidebar {
 	float: left;
 	width: 220px;
+	height: 245px;
 	background-color: #fff;
-	padding: 5px 10px;
+	padding: 4px 10px;
 }
-h4{
+
+.sanjiao ul li {
+	position: relative;
+}
+
+.sanjiao {
+	position: relative;
+	left: 29px;
+	top: 23px;
+	width: 0px;
+	height: 0px;
+	border: 5px solid transparent;
+	border-left-color: dimgray;
+	margin-right: 5px;
+}
+
+.sidebar ul li a {
 	display: block;
-	padding-top: 10px;
-	font-size: 18px;
-}
-select{
 	width: 190px;
-	height: 28px;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 40px;
+	color: gray;
+	font-size: 15px;
+}
+
+.sidebar ul li :hover {
+	color: black;
 }
 .main{
-	float: right;
 	flex-wrap: wrap;
 	display: flex;
 	justify-content: space-between;
+	float: right;
 	width: 900px;
 }
 .main div img{
