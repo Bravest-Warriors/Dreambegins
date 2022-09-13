@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户搜索</title>
+	</head>
+	<body>
+		<h3>用户搜索</h3>
+		<!-- 
+		 form 用于提交按钮向服务器发请求
+		   action 设置请求的URL
+		   method 设置请求的方法，默认是get
+		 -->
+		<form action="/mysearch" method="get">
+			<!--  
+			 name 用于设置参数名，用来接收用户输入的值
+			 -->
+			<input type="text" name="kw" placeholder="请输入关键字">
+			<button type="submit">搜索</button>
+		</form>
+	</body>
+</html>
