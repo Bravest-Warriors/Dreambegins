@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="./js/AJAX.js"></script>
+		<link rel="stylesheet" href="css/zc.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="logo">
+			<img src="../Notebooks_SHOP/image/dl.img/logo.webp" alt="...">
+		</div>
+		<p>一个帐号，玩转所有官网服务！</p>
+		<div class="area clearfix">
+			<input type="text" placeholder="昵称" id="iname"><span id="s1"></span>
+			<input type="password" placeholder="手机号" id="iphone"><span id="s2"></span>
+			<div>
+				<input type="text" class="t3"><button class="hq"><span>获取验证码</span></button>
+			</div>
+			<input type="text" placeholder="密码" id="pwd1"><span id="s3"></span>
+			<input type="password" placeholder="确认密码" id="pwd2"><span id="s4"></span>
+			<div class="agree">
+				<input type="checkbox" name="" id="iagree">我同意《用户手册》和《保密条款》<span id="s5"></span>
+			</div>
+
+			<div class="clearfix">
+				<button class="dl">登录</button>
+				<button class="zc" id="izc">注册</button>
+			</div>
+			<h4>第三方账号登录</h4>
+	</body>
+	<script>
+		iname.onfocus = function() {
+			s1.innerHTML = '请输入3~8位昵称'
+		}
+		iname.onblur = function() {
+			var i = iname.value
+			var p = /^.{3,8}$/
+			if (p.test(i)) {
+				s1.innerHTML = '格式正确'
+				s1.style.color = 'green'
+			} else {
+				s1.innerHTML = '格式错误'
+				s1.style.color = 'red'
+			}
+		}
+		iphone.onfocus = function() {
+			s2.innerHTML = '请输入电话号码'
+		}
+		iphone.onblur = function() {
+			var i = iphone.value
+			var p = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/
+			if (p.test(i)) {
+				s2.innerHTML = '格式正确'
+				s2.style.color = 'green'
+			} else {
+				s2.innerHTML = '格式错误'
+				s2.style.color = 'red'
+			}
+		}
+		pwd1.onfocus = function() {
+			s3.innerHTML = '以字母开头，长度在6~18之间，只能包含字母、数字和下划线'
+		}
+		pwd1.onblur = function() {
+			var i = pwd1.value
+			var p = /^[a-zA-Z]\w{5,17}$/
+			if (p.test(i)) {
+				s3.innerHTML = '格式正确'
+				s3.style.color = 'green'
+			} else {
+				s3.innerHTML = '格式错误'
+				s3.style.color = 'red'
+			}
+		}
+		pwd2.onblur = function() {
+			var i = pwd2.value
+			if (pwd2.value !== pwd1.value) {
+				s4.innerHTML = '两次密码不一致'
+				s4.style.color = 'red'
+			} else {
+				s4.innerHTML = '密码一致'
+				s4.style.color = 'green'
+			}
+		}
+		izc.onclick = function() {
+			request({
+				type: 'post',
+				url: 'http://127.0.0.1:3000/v1/users/zc',
+				data: {
+					uname: iname.value,
+					phone: iphone.value,
+					pwd: pwd2.value
+				},
+				async: true,
+				success: function(res) {
+					console.log(res);
+					alert('注册成功！')
+					location.href = 'dl.html'
+				}
+			})
+		}
+	</script>
+</html>
