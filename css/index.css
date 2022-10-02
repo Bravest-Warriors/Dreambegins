@@ -1,0 +1,287 @@
+.bdg{
+	background-color: white;
+}
+.waic{
+	background-color: #272727;
+}
+.cen{
+	width: 100%;
+	background: url(../img/111.webp)no-repeat;
+	background-position: top;
+}
+.center dl{	
+	border: 1px solid #272727;
+	width: 240px;
+}
+.center dt{
+	width: 240px;
+	height: 46px;
+	line-height: 46px;
+	padding-left: 25px;
+	background-color: aqua;
+}
+.center dd{
+	width: 240px;
+	height: 58px;
+	line-height: 55px;
+	padding-left: 25px;
+	border-bottom: 1px solid gray;
+}
+.center dd:last-child{
+	border-bottom: 0;
+}
+.center dd a{
+	color: white;
+}
+.center dd:hover{
+	background-color: gainsboro;
+}
+/* 四个块状模块 */
+.new {
+	padding-top: 30px;
+
+}
+.news{
+	float: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-top: 5px;
+	display: flex;
+	 display: block;
+	flex-wrap: wrap;
+	width: 230px;
+	height: 159px;
+	background-color: aqua;
+}
+.news div{
+	text-align: center;
+	float: left;
+	width: 110px;
+	height: 70px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+.news div img{
+	margin-top: 15px;
+}
+.news div:nth-child(even){
+	border-right: 0;
+}
+.news div:nth-child(n+3){
+	border-bottom: 0;
+}
+.tup{
+	float: right;
+}
+/* 精品推荐 */
+.jp{
+	height: 380px;
+}
+
+.jp .fl{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	color: bisque;
+}
+.otsid ul{
+	display: flex;
+	justify-content: space-between;
+}
+.otsid ul li{
+	border: 1px solid #FFE5B5;
+	padding: 0 15px;
+	width: 220px;
+	height: 235px;
+}
+.otsid ul li img{
+	margin-left: -3px;
+	margin-top: 2px;
+	width: 200px;
+	height: 145px;
+	transition: 0.2s linear;
+}
+.otsid ul li:hover img{
+	transform: scale(1.04);
+}
+.otsid ul li h3,.otsid ul li p{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.otsid ul li h3{
+	font-weight: 600;
+	font-size: 18px;
+}
+.otsid ul li p{
+	width: 100px;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+/* 商品模块 */
+.sp_hd{
+	margin-top: 35px;
+	width: 100%;
+	height: 80px;
+	background-color: #F2F2F2;
+}
+.sp_title{
+	height: 80px;
+}
+.sp_title .fl{
+	margin-top: 35px;
+	font-size: 20px;
+	color: dimgrey;
+}
+.sp_title .fr{
+	margin-top: 45px;
+}
+.sp_bdg{
+	width: 100%;
+	background-color: #F2F2F2;
+}
+.sp_bd{
+	width: 1200px;
+	height: 605px;
+	margin: 0 auto;
+	border: 1px solid transparent;
+}
+.sp_bd .fl2 div:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.fl2{
+	float: right;
+	width: 700px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.fl2 div{
+	float: left;
+	width: 230px;
+	height: 288px;
+	text-align: center;
+	background-color: white;
+	transition: 0.2s linear;
+}
+.fl2 div:nth-child(n+4){
+	margin-top: 28px;
+}
+.fl2  p{
+	margin: 0 auto;
+	margin-top: 15px;
+	width: 160px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.fl2  h2{
+	padding: 0 10px;
+	margin-top: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.fl2 div img{
+	display: block;
+	width: 227px;
+	height: 156px;
+}
+/* 热评产品 */
+.hot_hd{
+	margin-top: 30px;
+	height: 50px;
+}
+.hot_hd .fl{
+	margin-top: 30px;
+	font-size: 20px;
+	color: dimgrey;
+}
+.hot_bd{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	height: 270px;
+}
+.hot_bd div{
+	background-color: white;
+	width: 220px;
+	text-align: center;
+	transition: 0.2s linear;
+}
+.hot_bd div:hover{
+	transform: translateY(-6px);
+	box-shadow: 0 10px 10px rgba(00.5, 00.5, 00.5, 0.5);
+}
+.hot_bd img{
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	height: 140px;
+}
+.hot_bd div h3{
+	margin-top: 20px;
+}
+.hot_bd div p{
+	width: 160px;
+	margin: 0 auto;
+	margin-top: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.hot_bd div span{
+	display: block;
+	margin-top: 15px;
+	font-size: 20px;
+	color: aqua;
+}
+/* 测评模块 */
+.pc_hd{
+	margin-top: 30px;
+	height: 50px;
+}
+.pc_hd .fl{
+	margin-top: 30px;
+	font-size: 20px;
+	color: dimgrey;
+}
+.pc_bd{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	height: 270px;
+}
+.pc_bd div{
+	background-color: white;
+	width: 280px;
+	height: 340px;
+	transition: 0.2s linear;
+}
+.pc_bd div:hover{
+	transform: translateY(-5px);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, );
+}
+.pc_bd div img{
+	display: block;
+	margin: 0 auto;
+	width: 280px;
+	height: 178px;
+}
+.pc_bd div h3{
+    margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+	padding: 0 3px;
+}
+.pc_bd div p{
+	line-height: 24px;
+	display: block;
+	margin-top: 10px;
+	padding: 0 20px;
+    color: darkgray;
+}

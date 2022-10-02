@@ -1,0 +1,80 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+/*  */
+.logo img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+p{
+	text-align: center;
+	margin: 15px auto;
+	font-size: 24px;
+}
+.area{
+	margin: 0 auto;
+	width: 300px;
+}
+input[type='text'],input[type='password']{
+	display: block;
+	margin: 10px auto;
+	width: 300px;
+	height: 40px;
+	border: 1px solid lightgrey;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.t3{
+	float: left;
+	width: 230px !important;
+}
+.hq{
+	width: 70px;
+	border-radius: 0;
+	border: 0;
+	height: 40px;
+	transform: translateY(-4px);
+	background-color: aqua;
+}
+input[type='checkbox']{
+	padding-top: 100px;
+}
+button{
+	display: inline-block;
+	margin-top: 14px;
+	width: 50px;
+	height: 35px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+.agree{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid lightgray;
+	border-top: 1px solid lightgray;
+}
+.dl{
+	margin-top: 10px;
+	float: right;
+	background-color: aqua;
+	border: transparent;
+}
+.zc{
+	margin-top: 10px;
+	float: left;
+	background-color: white;
+	border:1px solid lightgrey
+}
+a{
+	float: right;
+	margin-top: 30px;
+	color: darkgray;
+}

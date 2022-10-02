@@ -1,0 +1,175 @@
+.bdg {
+	width: 100%;
+	background-color: #F2F2F2;
+}
+
+.bd_nav {
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+}
+
+.bd_nav div {
+	position: absolute;
+	font-size: 14px;
+}
+
+.bd_nav div a {
+	font-size: 15px;
+	color: red;
+}
+
+.details{
+	margin-top: 36px;
+}
+.details .fl {
+	width: 590px;
+}
+
+.img1 {
+	display: block;
+	width: 590px;
+	height: 390px;
+}
+
+#small_img img {
+	width: 110px;
+	height: 66px;
+}
+
+.details .fr {
+	width: 440px;
+}
+
+.fr h1 {
+	font-size: 26px;
+}
+
+.fr p {
+	font-size: 14px;
+	margin-top: 40px;
+}
+
+.fr h2 {
+	font-size: 25px;
+	color: red;
+	margin-top: 30px;
+}
+
+.fr h5 {
+	margin-top: 20px;
+	font-size: 13px;
+}
+
+input {
+	margin-top: 20px;
+
+}
+
+.fr span {
+	font-size: 15px;
+}
+
+#addshop {
+	margin-top: 30px;
+	width: 160px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	background-color: aqua;
+	border: 0;
+	float: left;
+}
+
+.btn {
+	margin-top: 30px;
+	margin-left: 30px;
+	float: left;
+	width: 125px;
+	height: 60px;
+	border: 0;
+	display: flex;
+}
+
+#btn1,
+#btn2,
+.btn3 {
+	font-size: 14px;
+	display: block;
+	width: 40px;
+	height: 41px;
+	line-height: 41px;
+	text-align: center;
+	border: 0;
+}
+
+.fr ul {
+	margin-bottom: 60px;
+}
+
+.fr ul li {
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	border-top: 1px solid gainsboro;
+}
+
+.bottoms {
+	border-top: 1px solid gainsboro;
+}
+
+.bottoms span:nth-child(-n+3) {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-right: 30px;
+	font-size: 15px;
+}
+
+.bottoms span:nth-child(n+4) {
+	display: block;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.bottoms h1 {
+	font-weight: 500;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 26px;
+}
+
+.bottoms img {
+	display: block;
+	margin-top: 35px;
+}
+
+.btom_top {
+	display: flex;
+	margin-top: 40px;
+}
+
+.btom_top div img {
+	margin-left: 20px;
+	width: 190px;
+}
+
+.btom_top div {
+	float: left;
+	margin-top: 30px;
+	border: 1px solid darkgray;
+	width: 230px;
+	height: 240px;
+	margin-right: 30px;
+}
+
+.hh5 {
+	transform: translateY(60px);
+}
+
+.btom_top div span {
+	display: block;
+	text-align: center;
+	margin-left: 70px;
+}
