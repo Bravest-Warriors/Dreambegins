@@ -57,8 +57,13 @@
 			<!-- 商品详情 -->
 			<div class="details w clearfix">
 				<div class="fl">
-					<img src="image/details_img/det1.webp" alt="" class="img1">
+					<img src="image/details_img/det1.webp" alt="" class="img1" id="image">
 					<div id="small_img">
+						<img src="./big_img/big_1.webp" data-bg="./big_img/big_1.webp">
+						<img src="./big_img/big_2.webp" data-bg="./big_img/big_2.webp">
+						<img src="./big_img/big_3.webp" data-bg="./big_img/big_3.webp">
+						<img src="./big_img/big_4.webp" data-bg="./big_img/big_4.webp">
+						<img src="./big_img/big_5.webp" data-bg="./big_img/big_5.webp">
 					</div>
 				</div>
 				<div class="fr">
@@ -263,6 +268,19 @@
 						`
 					
 					box.innerHTML = str
+				}
+			})
+			
+			const imgs=document.querySelectorAll('#small_img img')
+			imgs.forEach(img=>{
+				img.onmouseover=function(){
+					imgs.forEach(img=>{
+						img.classList.remove('active')
+					})
+					img.classList.add('active')
+					const imgss=this.dataset.bg
+					image.src=imgss
+					
 				}
 			})
 		</script>
